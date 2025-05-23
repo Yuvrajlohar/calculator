@@ -123,3 +123,65 @@
 # else:print("weak password")
 
 
+
+def totalt():
+            
+            def input_time():
+                try:
+                    h = int(input("entre hours"))
+                    m = int(input("minutes"))
+                    s = int(input("seconds"))
+                    return h,m,s
+                except ValueError:
+                    print("please entre only intigers")
+                    input_time()
+def time_cal2():
+
+    try:
+        type= str(input("entre time or specific"))
+        return type
+    except ValueError:
+        print("maybe you entred something wrong try to entre:\n time or specific ")
+        time_cal2()
+
+    if(type=="specific"):
+                
+    
+
+                
+        
+                def calculation():
+                    print("which operation you want to perform \n convert to second\n to minutes \n hours")
+                    n = str(input("entre your operation"))
+                    if(n=="seconds"):
+                        hour = h*3600
+                        minute = m*60
+                        second =s*1
+                        seconds =hour+minute+second
+                        print(second,"seconds")
+                    elif(n=="minutes"):
+                        hour= h*60
+                        minute =m*1
+                        second = s%60
+                        minutes= hour+minute+second
+                        print(minutes)
+                    elif(n=="hours"):
+                        hour = h*1
+                        minute = m%60
+                        second = s%3600
+                        hours = hour+minute+second
+                        print(hours)
+                    else:
+                        print("try to entre","seconds or minutes or hours")
+                        calculation()
+    elif(type=='time'):
+       
+
+            
+                       
+
+                
+        
+
+    
+    
